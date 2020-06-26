@@ -22,8 +22,10 @@ class TicTacToe
     puts "#{@board[6]} | #{@board[7]} | #{@board[8]}"
   end
 
-  def move(location, character = "X")
-    @board[location.to_i - 1] = character
+  def move(index, token = "X")
+    if valid_move?(index)
+      @board[index] = token
+    end
   end
 
   def position_taken?(position)
