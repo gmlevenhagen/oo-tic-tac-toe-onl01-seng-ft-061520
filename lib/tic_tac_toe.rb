@@ -45,7 +45,7 @@ class TicTacToe
 
   def turn
     puts "Please enter 1-9:"
-    input = gets.strip
+  input = gets.strip
     if valid_move?(input)
       move(input, current_player)
     else
