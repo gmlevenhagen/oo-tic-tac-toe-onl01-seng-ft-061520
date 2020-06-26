@@ -64,7 +64,13 @@ end
 
 
  def current_player
-   turn_count % 2 == 0 ? "X" : "O"
+   num_turns = turn_count
+ if num_turns % 2 == 0
+   player = "X"
+ else
+   player = "O"
+ end
+ return player
  end
 
  def won?
