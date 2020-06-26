@@ -53,6 +53,7 @@ class TicTacToe
     end
     display_board
   end
+end
 
   def turn_count
    counter = 0
